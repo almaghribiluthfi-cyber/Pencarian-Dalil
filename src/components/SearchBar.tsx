@@ -12,6 +12,8 @@ interface SearchBarProps {
   setSelectedCategory: (cat: Category) => void;
   onSearch: (overrideQuery?: string) => void;
   isLoading: boolean;
+  hasCustomKey?: boolean;
+  onOpenApiKeyModal?: () => void;
 }
 
 export const SearchBar: React.FC<SearchBarProps> = ({
@@ -22,7 +24,9 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   selectedCategory,
   setSelectedCategory,
   onSearch,
-  isLoading
+  isLoading,
+  hasCustomKey,
+  onOpenApiKeyModal
 }) => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -150,10 +154,18 @@ export const SearchBar: React.FC<SearchBarProps> = ({
             </button>
           </div>
 
-          <div className="text-[11px] sm:text-xs text-[#e8dcc4]/85 flex items-center gap-1.5 bg-[#0d2e27]/80 px-2.5 py-1 rounded-lg border border-[#2a6b5c]/40">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Search Engine & Rujukan Salaf Aktif</span>
-          </div>
+          <button
+            type="button"
+            onClick={onOpenApiKeyModal}
+            className="text-[11px] sm:text-xs text-[#e8dcc4] hover:text-white flex items-center gap-1.5 bg-[#0d2e27]/80 hover:bg-[#2a6b5c] px-2.5 py-1 rounded-lg border border-[#2a6b5c]/40 hover:border-[#c49a45] transition-all cursor-pointer"
+          >
+            <span className={`inline-block w-2 h-2 rounded-full ${hasCustomKey ? 'bg-[#c49a45] animate-ping' : 'bg-emerald-400 animate-pulse'}`}></span>
+            <span>
+              {hasCustomKey 
+                ? 'Gemini AI Aktif (Live API)' 
+                : 'Mode Database Lokal (Klik untuk set AI Key)'}
+            </span>
+          </button>
         </div>
 
         {/* Categories Chips: Akhlak, Ibadah, Pendidikan, Keluarga, Sosial, Muamalah */}

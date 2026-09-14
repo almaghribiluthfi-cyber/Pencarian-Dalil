@@ -21,6 +21,7 @@ import {
   Users
 } from 'lucide-react';
 import { DalilItem, DalilExplanation, VerificationStatus } from '../types';
+import { hasUserApiKey, explainDalilWithGemini } from '../utils/geminiClient';
 
 interface DalilDetailModalProps {
   dalil: DalilItem | null;
@@ -60,6 +61,19 @@ export const DalilDetailModal: React.FC<DalilDetailModalProps> = ({
   const fetchExplanation = async () => {
     setLoadingExplanation(true);
     setExplainError(null);
+
+    // If user has supplied their own API Key, directly call Google Gemini client-side
+    if (hasUserApiKey()) {
+      try {
+        const geminiExp = await explainDalilWithGemini(dalil, userTopic || dalil.category);
+        setExplanation(geminiExp);
+        setLoadingExplanation(false);
+        return;
+      } catch (geminiErr: any) {
+        console.warn('Direct Gemini explain call failed, trying server / fallback:', geminiErr);
+      }
+    }
+
     try {
       const res = await fetch('/api/explain', {
         method: 'POST',

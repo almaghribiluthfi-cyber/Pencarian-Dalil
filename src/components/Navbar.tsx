@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Bookmark, History, Search, ShieldCheck, Sparkles } from 'lucide-react';
+import { BookOpen, Bookmark, History, Search, ShieldCheck, Sparkles, Key } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: 'search' | 'favorites' | 'history';
@@ -7,6 +7,8 @@ interface NavbarProps {
   favoritesCount: number;
   historyCount: number;
   onOpenIntegrityGuide: () => void;
+  onOpenApiKeyModal: () => void;
+  hasCustomKey: boolean;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -14,7 +16,9 @@ export const Navbar: React.FC<NavbarProps> = ({
   setActiveTab,
   favoritesCount,
   historyCount,
-  onOpenIntegrityGuide
+  onOpenIntegrityGuide,
+  onOpenApiKeyModal,
+  hasCustomKey
 }) => {
   return (
     <header className="sticky top-0 z-30 bg-[#123f36] text-[#e8dcc4] border-b border-[#2a6b5c]/50 shadow-md">
@@ -98,6 +102,23 @@ export const Navbar: React.FC<NavbarProps> = ({
                 )}
               </button>
             </nav>
+
+            {/* API Key Modal Trigger */}
+            <button
+              id="btn-api-key"
+              onClick={onOpenApiKeyModal}
+              title="Pengaturan API Key Google Gemini AI"
+              className={`flex items-center justify-center p-2 sm:px-3 sm:py-2 rounded-xl text-xs font-medium border transition-all ${
+                hasCustomKey 
+                  ? 'bg-[#c49a45] text-[#123f36] border-[#c49a45] font-bold shadow-sm' 
+                  : 'bg-[#1a4d42] hover:bg-[#225e51] text-[#e8dcc4] border-[#c49a45]/30 hover:border-[#c49a45]'
+              }`}
+            >
+              <Key className={`w-4 h-4 ${hasCustomKey ? 'text-[#123f36]' : 'text-[#c49a45]'}`} />
+              <span className="hidden md:inline ml-1.5">
+                {hasCustomKey ? 'AI Aktif' : 'Set API Key'}
+              </span>
+            </button>
 
             {/* Integrity / Guidance Modal Trigger */}
             <button

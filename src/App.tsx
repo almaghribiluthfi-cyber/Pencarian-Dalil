@@ -21,6 +21,9 @@ import {
   IntegrityModal 
 } from './components/IntegrityModal';
 import { 
+  ApiKeyModal 
+} from './components/ApiKeyModal';
+import { 
   DalilItem, 
   DalilSourceType, 
   Category, 
@@ -30,6 +33,12 @@ import {
 } from './types';
 import { VERIFIED_DALIL_DATABASE } from './data/dalilDatabase';
 import { searchLocalDatabase } from './utils/searchEngine';
+import { 
+  getStoredApiKey, 
+  hasUserApiKey, 
+  searchDalilWithGemini, 
+  explainDalilWithGemini 
+} from './utils/geminiClient';
 import { 
   Sparkles, 
   BookOpen, 
@@ -64,6 +73,8 @@ export default function App() {
   const [initialExplanation, setInitialExplanation] = useState<DalilExplanation | null>(null);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
   const [isIntegrityModalOpen, setIsIntegrityModalOpen] = useState(false);
+  const [isApiKeyModalOpen, setIsApiKeyModalOpen] = useState(false);
+  const [userApiKey, setUserApiKey] = useState<string>(() => getStoredApiKey());
 
   // Persistence
   const [savedItems, setSavedItems] = useState<SavedDalilItem[]>(() => {
@@ -123,6 +134,48 @@ export default function App() {
     setIsLoading(true);
     setHasSearched(true);
 
+    // 1. Direct Client-side Gemini AI Search if user provided API Key
+    if (hasUserApiKey() && queryToUse.trim().length > 0) {
+      try {
+        const geminiResults = await searchDalilWithGemini(queryToUse, sourceFilter, selectedCategory);
+        // Also combine with any high-scoring local database matches
+        const localMatches = searchLocalDatabase(queryToUse, sourceFilter, selectedCategory);
+        
+        // Merge without duplicates by reference
+        const merged: DalilItem[] = [...geminiResults];
+        localMatches.forEach(item => {
+          if (!merged.some(m => m.reference.toLowerCase() === item.reference.toLowerCase())) {
+            merged.push(item);
+          }
+        });
+
+        setResults(merged);
+        setSearchSourceNote('Ditelusuri menggunakan model Google Gemini AI langsung via API Key Anda & verifikasi kitab mu\'tabar.');
+        showToast(`Ditemukan ${merged.length} dalil terverifikasi via Gemini AI.`);
+
+        if (queryToUse.trim().length > 1) {
+          const newHistoryItem: SearchHistoryItem = {
+            id: `hist-${Date.now()}`,
+            query: queryToUse.trim(),
+            timestamp: Date.now(),
+            resultsCount: merged.length,
+            category: selectedCategory,
+            filter: sourceFilter
+          };
+          setSearchHistory(prev => {
+            const filtered = prev.filter(h => h.query.toLowerCase() !== queryToUse.trim().toLowerCase());
+            return [newHistoryItem, ...filtered].slice(0, 30);
+          });
+        }
+        setIsLoading(false);
+        return;
+      } catch (geminiErr: any) {
+        console.warn('Direct Gemini Search error, falling back to server/database:', geminiErr);
+        showToast(geminiErr?.message || 'Gagal memanggil Gemini AI, mencoba alternatif database.');
+      }
+    }
+
+    // 2. Try Server / Worker endpoint
     try {
       const res = await fetch('/api/search', {
         method: 'POST',
@@ -240,7 +293,18 @@ export default function App() {
     setInitialExplanation(null);
     setIsDetailModalOpen(true);
 
-    // Auto-fetch explanation inside modal
+    // If user has set custom API key, use direct client-side Gemini
+    if (hasUserApiKey()) {
+      try {
+        const geminiExp = await explainDalilWithGemini(dalil, searchQuery || dalil.category);
+        setInitialExplanation(geminiExp);
+        return;
+      } catch (geminiErr) {
+        console.warn('Direct explain failed, trying server endpoint:', geminiErr);
+      }
+    }
+
+    // Auto-fetch explanation inside modal via server
     try {
       const res = await fetch('/api/explain', {
         method: 'POST',
@@ -280,6 +344,8 @@ export default function App() {
         favoritesCount={savedItems.length}
         historyCount={searchHistory.length}
         onOpenIntegrityGuide={() => setIsIntegrityModalOpen(true)}
+        onOpenApiKeyModal={() => setIsApiKeyModalOpen(true)}
+        hasCustomKey={!!userApiKey.trim()}
       />
 
       {/* Main Content Area */}
@@ -296,6 +362,8 @@ export default function App() {
               setSelectedCategory={setSelectedCategory}
               onSearch={handleSearch}
               isLoading={isLoading}
+              hasCustomKey={!!userApiKey.trim()}
+              onOpenApiKeyModal={() => setIsApiKeyModalOpen(true)}
             />
 
             {/* Results Section */}
@@ -466,6 +534,17 @@ export default function App() {
       <IntegrityModal
         isOpen={isIntegrityModalOpen}
         onClose={() => setIsIntegrityModalOpen(false)}
+      />
+
+      {/* Google Gemini API Key Settings Modal */}
+      <ApiKeyModal
+        isOpen={isApiKeyModalOpen}
+        onClose={() => setIsApiKeyModalOpen(false)}
+        onKeySaved={(newKey) => {
+          setUserApiKey(newKey);
+          setIsApiKeyModalOpen(false);
+          showToast(newKey ? 'API Key AI aktif! Pencarian cerdas Al-Qur\'an & Hadits siap digunakan.' : 'Menggunakan mode database offline.');
+        }}
       />
 
       {/* Toast Notification */}
