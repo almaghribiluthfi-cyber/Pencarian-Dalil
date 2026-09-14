@@ -29,6 +29,7 @@ import {
   DalilExplanation 
 } from './types';
 import { VERIFIED_DALIL_DATABASE } from './data/dalilDatabase';
+import { searchLocalDatabase } from './utils/searchEngine';
 import { 
   Sparkles, 
   BookOpen, 
@@ -162,16 +163,47 @@ export default function App() {
         });
       }
     } catch (err: any) {
-      console.error('Search error:', err);
-      // Fallback local filter
-      const localFiltered = VERIFIED_DALIL_DATABASE.filter(item => {
-        if (sourceFilter !== 'all' && item.type !== sourceFilter) return false;
-        if (selectedCategory !== 'Semua' && item.category !== selectedCategory) return false;
-        return true;
-      });
+      console.warn('Backend search unreachable, running client search engine:', err);
+      
+      // Smart fallback using local search engine
+      let localFiltered: DalilItem[] = [];
+      if (queryToUse.trim().length > 0) {
+        localFiltered = searchLocalDatabase(queryToUse, sourceFilter, selectedCategory);
+      } else {
+        localFiltered = VERIFIED_DALIL_DATABASE.filter(item => {
+          if (sourceFilter !== 'all' && item.type !== sourceFilter) return false;
+          if (selectedCategory !== 'Semua' && item.category !== selectedCategory) return false;
+          return true;
+        });
+      }
+
       setResults(localFiltered);
-      setSearchSourceNote('Menampilkan dalil terverifikasi dari rujukan database.');
-      showToast('Menampilkan rujukan database lokal terverifikasi.');
+      setSearchSourceNote('Menampilkan dalil terverifikasi dari rujukan database lokal.');
+      
+      if (queryToUse.trim().length > 0) {
+        if (localFiltered.length > 0) {
+          showToast(`Ditemukan ${localFiltered.length} dalil terverifikasi dari database.`);
+        } else {
+          showToast('Tidak ditemukan dalil yang cocok di database lokal untuk kata kunci tersebut.');
+        }
+
+        // Record history even on offline/static hosting
+        const newHistoryItem: SearchHistoryItem = {
+          id: `hist-${Date.now()}`,
+          query: queryToUse.trim(),
+          timestamp: Date.now(),
+          resultsCount: localFiltered.length,
+          category: selectedCategory,
+          filter: sourceFilter
+        };
+
+        setSearchHistory(prev => {
+          const filtered = prev.filter(h => h.query.toLowerCase() !== queryToUse.trim().toLowerCase());
+          return [newHistoryItem, ...filtered].slice(0, 30);
+        });
+      } else {
+        showToast('Menampilkan rujukan database lokal terverifikasi.');
+      }
     } finally {
       setIsLoading(false);
     }

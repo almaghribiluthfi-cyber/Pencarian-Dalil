@@ -367,6 +367,397 @@ export const VERIFIED_DALIL_DATABASE: DalilItem[] = [
     verificationStatus: "Terverifikasi",
     category: "Keluarga",
     tags: ["keluarga", "suami", "istri", "akhlak keluarga", "kelembutan"]
+  },
+
+  // 7. Muamalah & Jinayat - Hukum Larangan Mencuri (Sariqah) & Keadilan
+  {
+    id: 'quran-5-38',
+    type: 'quran',
+    reference: "QS. Al-Ma'idah [5]: 38",
+    surahName: "Al-Ma'idah",
+    verseNumber: "38",
+    arabicText: "وَٱلسَّارِقُ وَٱلسَّارِقَةُ فَٱقْطَعُوٓا۟ أَيْدِيَهُمَا جَزَآءًۢ بِمَا كَسَبَا نَكَـٰلًۭا مِّنَ ٱللَّهِ ۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌۭ",
+    indonesianTranslation: "Adapun laki-laki maupun perempuan yang mencuri, potonglah tangan keduanya sebagai balasan atas apa yang mereka perbuat dan sebagai siksaan dari Allah. Dan Allah Mahaperkasa lagi Mahabijaksana.",
+    relevance: "Hukum Pokok dan Keharaman Mutlak Tindak Pidana Mencuri / Pencurian (Sariqah)",
+    shortExplanation: "Ayat ini menetapkan keharaman mutlak perbuatan mencuri serta penetapan hukum hadd (sanksi tegas) demi menjaga kehormatan kepemilikan harta (hifzhul mal) seluruh lapisan masyarakat.",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 6, Surat ke-5, Ayat 38 (Tafsir Ibnu Katsir & Tafsir As-Sa'di)",
+    verificationStatus: "Terverifikasi",
+    category: "Muamalah",
+    tags: ["mencuri", "pencuri", "pencurian", "sariqah", "hukum mencuri", "potong tangan", "harta", "keadilan", "muamalah"],
+    scholarsReferences: [
+      "Tafsir Al-Qur'an Al-'Azhim (Al-Hafizh Ibnu Katsir)",
+      "Taisir Al-Karim Ar-Rahman (Syaikh As-Sa'di)",
+      "Kajian Fiqih Jinayat & Muamalah (Rumaysho.com & Almanhaj.or.id)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "TafsirWeb.com",
+        authorOrScholar: "Kementerian Agama RI & Tafsir As-Sa'di",
+        description: "Tafsir QS. Al-Ma'idah Ayat 38 tentang Larangan Mencuri",
+        url: "https://tafsirweb.com/1922-surat-al-maidah-ayat-38.html"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Kajian Fiqih: Syarat dan Batasan Hukum Mencuri dalam Syariat Islam",
+        url: "https://rumaysho.com"
+      }
+    ]
+  },
+  {
+    id: 'hadith-bukhari-3475',
+    type: 'hadith',
+    reference: "HR. Al-Bukhari no. 3475 & HR. Muslim no. 1688",
+    book: "Shahih Al-Bukhari & Shahih Muslim",
+    hadithNumber: "3475 (Bukhari) / 1688 (Muslim)",
+    narrator: "'Aisyah radhiyallahu 'anha",
+    hadithGrade: "Muttafaq 'Alaih",
+    arabicText: "إِنَّمَا أَهْلَكَ الَّذِينَ قَبْلَكُمْ، أَنَّهُمْ كَانُوا إِذَا سَرَقَ فِيهِمُ الشَّرِيفُ تَرَكُوهُ، وَإِذَا سَرَقَ فِيهِمُ الضَّعِيفُ أَقَامُوا عَلَيْهِ الحَدَّ، وَايْمُ اللَّهِ لَوْ أَنَّ فَاطِمَةَ بِنْتَ مُحَمَّدٍ سَرَقَتْ لَقَطَعْتُ يَدَهَا",
+    indonesianTranslation: "Sesungguhnya yang membinasakan orang-orang sebelum kalian adalah jika orang terpandang di antara mereka mencuri, mereka membiarkannya. Namun jika orang lemah di antara mereka mencuri, mereka menegakkan hukum atasnya. Demi Allah, seandainya Fatimah binti Muhammad mencuri, niscaya aku sendiri yang akan memotong tangannya!",
+    relevance: "Larangan Keras Mencuri dan Penegakan Keadilan Tanpa Pandang Bulu",
+    shortExplanation: "Rasulullah shallallahu 'alaihi wa sallam bersumpah menegaskan bahwa hukum haramnya mencuri berlaku mutlak bagi siapa saja tanpa pandang bulu, bahkan kepada putri tercinta beliau, dan diskriminasi hukum adalah penyebab kehancuran umat terdahulu.",
+    sourceDetails: "Shahih Al-Bukhari, Kitab Ahaditsil Anbiya; Shahih Muslim, Kitab Al-Hudud",
+    verificationStatus: "Terverifikasi",
+    category: "Sosial",
+    tags: ["mencuri", "pencuri", "pencurian", "keadilan hukum", "sariqah", "fatimah binti muhammad", "hukum mencuri", "sosial"],
+    scholarsReferences: [
+      "Fathul Bari Syarah Shahih Al-Bukhari (Al-Hafizh Ibnu Hajar Al-Asqalani)",
+      "Syarah Shahih Muslim (Imam An-Nawawi)",
+      "Kajian Asatidz Sunnah (Ustadz Muhammad Abduh Tuasikal, Ustadz Yazid Jawas)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Pelajaran dari Hadits 'Seandainya Fatimah Mencuri': Keadilan Mutlak Hukum Syariat",
+        url: "https://rumaysho.com"
+      },
+      {
+        websiteName: "Sunnah.com",
+        authorOrScholar: "Shahih Al-Bukhari & Muslim",
+        description: "Takhrij Hadits Kitab Al-Hudud no. 3475 / 1688",
+        url: "https://sunnah.com/bukhari:3475"
+      }
+    ]
+  },
+  {
+    id: 'hadith-bukhari-6788',
+    type: 'hadith',
+    reference: "HR. Al-Bukhari no. 6788 & HR. Muslim no. 1687",
+    book: "Shahih Al-Bukhari & Shahih Muslim",
+    hadithNumber: "6788 (Bukhari) / 1687 (Muslim)",
+    narrator: "Abu Hurairah radhiyallahu 'anhu",
+    hadithGrade: "Muttafaq 'Alaih",
+    arabicText: "لَعَنَ اللَّهُ السَّارِقَ، يَسْرِقُ البَيْضَةَ فَتُقْطَعُ يَدُهُ، وَيَسْرِقُ الحَبْلَ فَتُقْطَعُ يَدُهُ",
+    indonesianTranslation: "Allah melaknat pencuri yang mencuri sebutir telur lalu dipotong tangannya, dan mencuri seutas tali lalu dipotong tangannya.",
+    relevance: "Peringatan Keras terhadap Dosa Mencuri yang Dimulai dari Hal Kecil Menuju Kehancuran",
+    shortExplanation: "Para ulama menjelaskan bahwa hadits ini mencela orang yang meremehkan dosa mencuri barang kecil hingga terbiasa mencuri barang berharga senilai nisab yang menyebabkannya terkena hukum hadd dan laknat Allah.",
+    sourceDetails: "Shahih Al-Bukhari, Kitab Al-Hudud no. 6788; Shahih Muslim no. 1687",
+    verificationStatus: "Terverifikasi",
+    category: "Akhlak",
+    tags: ["mencuri", "pencuri", "pencurian", "laknat pencuri", "dosa besar", "sariqah", "menjaga harta", "akhlak"],
+    scholarsReferences: [
+      "Fathul Bari Syarah Shahih Al-Bukhari (Al-Hafizh Ibnu Hajar Al-Asqalani)",
+      "Al-Minhaj Syarah Shahih Muslim (Imam An-Nawawi)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Almanhaj.or.id",
+        authorOrScholar: "Ustadz Yazid bin Abdul Qadir Jawas",
+        description: "Bahaya Dosa Besar: Mencuri dan Mengambil Hak Orang Lain",
+        url: "https://almanhaj.or.id"
+      },
+      {
+        websiteName: "Sunnah.com",
+        authorOrScholar: "Shahih Al-Bukhari & Muslim",
+        description: "Takhrij Hadits Kitab Al-Hudud no. 6788",
+        url: "https://sunnah.com/bukhari:6788"
+      }
+    ]
+  },
+
+  // 8. Ibadah - Shalat Tiang Agama & Pencegah Perbuatan Keji dan Munkar
+  {
+    id: 'quran-29-45',
+    type: 'quran',
+    reference: "QS. Al-'Ankabut [29]: 45",
+    surahName: "Al-'Ankabut",
+    verseNumber: "45",
+    arabicText: "ٱتْلُ مَآ أُوحِىَ إِلَيْكَ مِنَ ٱلْكِتَـٰبِ وَأَقِمِ ٱلصَّلَوٰةَ ۖ إِنَّ ٱلصَّلَوٰةَ تَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ ۗ وَلَذِكْرُ ٱللَّهِ أَكْبَرُ ۗ وَٱللَّهُ يَعْلَمُ مَا تَصْنَعُونَ",
+    indonesianTranslation: "Bacalah Kitab (Al-Qur'an) yang telah diwahyukan kepadamu dan laksanakanlah shalat. Sesungguhnya shalat itu mencegah dari (perbuatan) keji dan munkar. Dan (ketahuilah) mengingat Allah (shalat) itu lebih besar (keutamaannya dari ibadah yang lain). Allah mengetahui apa yang kamu kerjakan.",
+    relevance: "Perintah Mendirikan Shalat dan Pengaruhnya Mencegah Perbuatan Keji dan Munkar",
+    shortExplanation: "Ayat ini menegaskan bahwa shalat yang dikerjakan dengan khusyuk, menyempurnakan rukun dan syaratnya, menjadi benteng spiritual yang menjauhkan pelakunya dari dosa dan kemaksiatan.",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 20, Surat ke-29, Ayat 45 (Tafsir Ibnu Katsir & Tafsir As-Sa'di)",
+    verificationStatus: "Terverifikasi",
+    category: "Ibadah",
+    tags: ["shalat", "sholat", "mencegah maksiat", "keji", "munkar", "ibadah", "kewajiban"],
+    scholarsReferences: [
+      "Tafsir Al-Qur'an Al-'Azhim (Ibnu Katsir)",
+      "Taisir Al-Karim Ar-Rahman (Syaikh As-Sa'di)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "TafsirWeb.com",
+        authorOrScholar: "Kementerian Agama RI & Tafsir As-Sa'di",
+        description: "Tafsir QS. Al-'Ankabut Ayat 45 tentang Keutamaan Shalat",
+        url: "https://tafsirweb.com/7325-surat-al-ankabut-ayat-45.html"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Rahasia Mengapa Shalat Mencegah dari Keji dan Munkar",
+        url: "https://rumaysho.com"
+      }
+    ]
+  },
+
+  // 9. Akhlak & Niat - Ikhlas dalam Setiap Amal
+  {
+    id: 'hadith-bukhari-1',
+    type: 'hadith',
+    reference: "HR. Al-Bukhari no. 1 & HR. Muslim no. 1907",
+    book: "Shahih Al-Bukhari & Shahih Muslim",
+    hadithNumber: "1 (Bukhari) / 1907 (Muslim)",
+    narrator: "'Umar bin Al-Khaththab radhiyallahu 'anhu",
+    hadithGrade: "Muttafaq 'Alaih",
+    arabicText: "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا، أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ",
+    indonesianTranslation: "Sesungguhnya setiap amalan tergantung pada niatnya, dan sesungguhnya setiap orang akan mendapatkan sesuai dengan apa yang ia niatkan. Maka barangsiapa yang hijrahnya karena dunia yang ingin ia raih atau karena wanita yang ingin ia nikahi, maka hijrahnya itu menuju apa yang ia niatkan.",
+    relevance: "Pondasi Utama Seluruh Amal Perbuatan adalah Niat dan Keikhlasan semata karena Allah",
+    shortExplanation: "Hadits agung ini merupakan poros syariat Islam; sah dan berbobotnya pahala suatu amalan semata-mata ditentukan oleh keikhlasan niat di dalam hati.",
+    sourceDetails: "Shahih Al-Bukhari, Kitab Bad'il Wahyi no. 1; Kitab Al-Iman Shahih Muslim",
+    verificationStatus: "Terverifikasi",
+    category: "Akhlak",
+    tags: ["niat", "ikhlas", "amal", "akhlak", "hijrah", "pondasi agama"],
+    scholarsReferences: [
+      "Fathul Bari (Al-Hafizh Ibnu Hajar)",
+      "Jami'ul 'Ulum wal Hikam (Ibnu Rajab Al-Hanbali)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Syarah Hadits Arbain ke-1: Innamal A'malu Bin Niyyat",
+        url: "https://rumaysho.com"
+      },
+      {
+        websiteName: "Sunnah.com",
+        authorOrScholar: "Shahih Al-Bukhari",
+        description: "Revelation (Kitab Bad'il Wahyi) Hadith 1",
+        url: "https://sunnah.com/bukhari:1"
+      }
+    ]
+  },
+
+  // 10. Sosial & Muamalah - Sedekah Tidak Mengurangi Harta
+  {
+    id: 'hadith-muslim-2588',
+    type: 'hadith',
+    reference: "HR. Muslim no. 2588",
+    book: "Shahih Muslim",
+    hadithNumber: "2588",
+    narrator: "Abu Hurairah radhiyallahu 'anhu",
+    hadithGrade: "Shahih",
+    arabicText: "مَا نَقَصَتْ صَدَقَةٌ مِنْ مَالٍ، وَمَا زَادَ اللَّهُ عَبْدًا بِعَفْوٍ إِلَّا عِزًّا، وَمَا تَوَاضَعَ أَحَدٌ لِلَّهِ إِلَّا رَفَعَهُ اللَّهُ",
+    indonesianTranslation: "Sedekah tidaklah mengurangi harta, dan tidaklah Allah menambah bagi seorang hamba yang suka memaafkan melainkan kemuliaan, serta tidaklah seseorang merendahkan hati (tawadhu') karena Allah melainkan Allah akan meninggikan derajatnya.",
+    relevance: "Keberkahan Sedekah, Anjuran Memberi Maaf, dan Keutamaan Sikap Tawadhu'",
+    shortExplanation: "Rasulullah shallallahu 'alaihi wa sallam meyakinkan kaum mukminin bahwa bersedekah justru mendatangkan keberkahan berlimpah dan perlindungan terhadap harta.",
+    sourceDetails: "Shahih Muslim, Kitab Al-Birr wash Shilah wal Adab, Bab Istihbabit 'Afwi wat Tawadhu'",
+    verificationStatus: "Terverifikasi",
+    category: "Sosial",
+    tags: ["sedekah", "infaq", "zakat", "harta", "tawadhu", "memaafkan", "sosial", "berkah"],
+    scholarsReferences: [
+      "Al-Minhaj Syarah Shahih Muslim (Imam An-Nawawi)",
+      "Riyadhus Shalihin (Imam An-Nawawi)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Almanhaj.or.id",
+        authorOrScholar: "Ustadz Abu Minhal, Lc.",
+        description: "Keutamaan Sedekah: Harta Menjadi Berkah dan Pahala Berlipat Ganda",
+        url: "https://almanhaj.or.id"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Kajian Hadits: Sedekah Tidaklah Mengurangi Harta",
+        url: "https://rumaysho.com"
+      }
+    ]
+  },
+
+  // 11. Muamalah - Larangan Keras Riba
+  {
+    id: 'quran-2-275',
+    type: 'quran',
+    reference: "QS. Al-Baqarah [2]: 275",
+    surahName: "Al-Baqarah",
+    verseNumber: "275",
+    arabicText: "ٱلَّذِينَ يَأْكُلُونَ ٱلرِّبَوٰا۟ لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ ٱلَّذِى يَتَخَبَّطُهُ ٱلشَّيْطَـٰنُ مِنَ ٱلْمَسِّ ۚ ذَٰلِكَ بِأَنَّهُمْ قَالُوٓا۟ إِنَّمَا ٱلْبَيْعُ مِثْلُ ٱلرِّبَوٰا۟ ۗ وَأَحَلَّ ٱللَّهُ ٱلْبَيْعَ وَحَرَّمَ ٱلرِّبَوٰا۟",
+    indonesianTranslation: "Orang-orang yang memakan riba tidak dapat berdiri melainkan seperti berdirinya orang yang kemasukan setan karena gila. Yang demikian itu karena mereka berkata bahwa jual beli itu sama dengan riba. Padahal Allah telah menghalalkan jual beli dan mengharamkan riba.",
+    relevance: "Keharaman Mutlak Praktik Riba dan Perbedaan Hakiki antara Jual Beli dengan Riba",
+    shortExplanation: "Ayat ini menjadi dasar qath'i haramnya riba dalam segala bentuknya dan mempertegas bahwa jual beli yang halal didasarkan pada keridhaan serta perputaran manfaat nyata, bukan eksploitasi bunga/riba.",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 3, Surat ke-2, Ayat 275 (Tafsir Ibnu Katsir & Tafsir Jalalain)",
+    verificationStatus: "Terverifikasi",
+    category: "Muamalah",
+    tags: ["riba", "jual beli", "muamalah", "bunga bank", "haram", "ekonomi syariah"],
+    scholarsReferences: [
+      "Tafsir Al-Qur'an Al-'Azhim (Ibnu Katsir)",
+      "Fiqih Muamalah Maaliyyah Kontemporer (Dr. Erwandi Tarmizi, M.A.)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "TafsirWeb.com",
+        authorOrScholar: "Kementerian Agama RI & Tafsir As-Sa'di",
+        description: "Tafsir QS. Al-Baqarah Ayat 275: Halalnya Jual Beli dan Haramnya Riba",
+        url: "https://tafsirweb.com/1041-surat-al-baqarah-ayat-275.html"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Mengenal Hakikat Riba dan Bahayanya dalam Transaksi Keuangan",
+        url: "https://rumaysho.com"
+      }
+    ]
+  },
+
+  // 12. Akhlak & Moral - Larangan Mendekati Zina
+  {
+    id: 'quran-17-32',
+    type: 'quran',
+    reference: "QS. Al-Isra' [17]: 32",
+    surahName: "Al-Isra'",
+    verseNumber: "32",
+    arabicText: "وَلَا تَقْرَبُوا۟ ٱلزِّنَىٰٓ ۖ إِنَّهُۥ كَانَ فَـٰحِشَةًۭ وَسَآءَ سَبِيلًۭ",
+    indonesianTranslation: "Dan janganlah kamu mendekati zina; (zina) itu sungguh suatu perbuatan keji, dan suatu jalan yang buruk.",
+    relevance: "Larangan Keras Menutup Segala Pintu Menuju Zina (Saddudz Dzari'ah)",
+    shortExplanation: "Allah tidak hanya melarang perbuatan zina itu sendiri, melainkan melarang segala hal yang mendekatinya seperti ikhtilath terlarang, pacaran, berkhalwat, dan memandang yang bukan mahram.",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 15, Surat ke-17, Ayat 32 (Tafsir Al-Qurthubi & Ibnu Katsir)",
+    verificationStatus: "Terverifikasi",
+    category: "Akhlak",
+    tags: ["zina", "menjaga pergaulan", "iffah", "akhlak", "pacaran", "menjaga pandangan", "moral"],
+    scholarsReferences: [
+      "Tafsir Ibnu Katsir",
+      "Tafsir Taisir Al-Karim Ar-Rahman (Syaikh As-Sa'di)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "TafsirWeb.com",
+        authorOrScholar: "Kementerian Agama RI & Tafsir As-Sa'di",
+        description: "Tafsir QS. Al-Isra' Ayat 32 tentang Larangan Mendekati Zina",
+        url: "https://tafsirweb.com/4636-surat-al-isra-ayat-32.html"
+      },
+      {
+        websiteName: "Almanhaj.or.id",
+        authorOrScholar: "Lajnah Daimah Riset Ilmiah & Fatwa",
+        description: "Bahaya Zina dan Kewajiban Menutup Pintu-Pintu Fitnah Pergaulan",
+        url: "https://almanhaj.or.id"
+      }
+    ]
+  },
+
+  // 13. Sosial & Lisan - Larangan Ghibah (Menggunjing)
+  {
+    id: 'quran-49-12',
+    type: 'quran',
+    reference: "QS. Al-Hujurat [49]: 12",
+    surahName: "Al-Hujurat",
+    verseNumber: "12",
+    arabicText: "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱجْتَنِبُوا۟ كَثِيرًۭا مِّنَ ٱلظَّنِّ إِنَّ بَعْضَ ٱلظَّنِّ إِثْمٌۭ ۖ وَلَا تَجَسَّسُوا۟ وَلَا يَغْتَب بَّعْضُكُم بَعْضًا ۚ أَيُحِبُّ أَحَدُكُمْ أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًۭا فَكَرِهْتُمُوهُ ۚ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ تَوَّابٌۭ رَّحِيمٌۭ",
+    indonesianTranslation: "Wahai orang-orang yang beriman! Jauhilah banyak dari prasangka, sesungguhnya sebagian prasangka itu dosa, dan janganlah kamu mencari-cari kesalahan orang lain dan janganlah ada di antara kamu yang menggunjing sebagian yang lain. Apakah ada di antara kamu yang suka memakan daging saudaranya yang sudah mati? Tentu kamu merasa jijik kepadanya. Dan bertakwalah kepada Allah, sesungguhnya Allah Maha Penerima Tobat lagi Maha Penyayang.",
+    relevance: "Larangan Keras Berprasangka Buruk, Tajassus, dan Ghibah (Membicarakan Aib Saudara)",
+    shortExplanation: "Al-Qur'an menggambarkan orang yang mengghibah saudaranya seumpama memakan bangkai mayat saudaranya sendiri, sebagai ancaman sangat keras agar kaum mukminin menjaga kehormatan sesama.",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 26, Surat ke-49, Ayat 12 (Tafsir Ibnu Katsir)",
+    verificationStatus: "Terverifikasi",
+    category: "Sosial",
+    tags: ["ghibah", "menggunjing", "lisan", "prasangka", "tajassus", "aib", "sosial", "akhlak"],
+    scholarsReferences: [
+      "Tafsir Ibnu Katsir",
+      "Riyadhus Shalihin Bab Tahrimil Ghibah (Imam An-Nawawi)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Kajian Bahaya Ghibah: Pengertian, Batasan, dan Cara Menebusnya",
+        url: "https://rumaysho.com"
+      },
+      {
+        websiteName: "TafsirWeb.com",
+        authorOrScholar: "Kementerian Agama RI & Tafsir Jalalain",
+        description: "Tafsir QS. Al-Hujurat Ayat 12",
+        url: "https://tafsirweb.com/9812-surat-al-hujurat-ayat-12.html"
+      }
+    ]
+  },
+
+  // 14. Akhlak & Mental - Kesabaran Menghadapi Ujian
+  {
+    id: 'quran-2-155-156',
+    type: 'quran',
+    reference: "QS. Al-Baqarah [2]: 155-156",
+    surahName: "Al-Baqarah",
+    verseNumber: "155-156",
+    arabicText: "وَلَنَبْلُوَنَّكُم بِشَىْءٍۢ مِّنَ ٱلْخَوْفِ وَٱلْجُوعِ وَنَقْصٍۢ مِّنَ ٱلْأَمْوَٰلِ وَٱلْأَنفُسِ وَٱلثَّمَرَٰتِ ۗ وَبَشِّرِ ٱلصَّـٰبِرِينَ ۝ ٱلَّذِينَ إِذَآ أَصَـٰبَتْهُم مُّصِيبَةٌۭ قَالُوٓا۟ إِنَّا لِلَّهِ وَإِنَّآ إِلَيْهِ رَٰجِعُونَ",
+    indonesianTranslation: "Dan Kami pasti akan menguji kamu dengan sedikit ketakutan, kelaparan, kekurangan harta, jiwa, dan buah-buahan. Dan sampaikanlah kabar gembira kepada orang-orang yang sabar, (yaitu) orang-orang yang apabila ditimpa musibah, mereka berkata 'Inna lillahi wa inna ilaihi raji'un' (sesungguhnya kami milik Allah dan kepada-Nyalah kami kembali).",
+    relevance: "Hakikat Ujian Kehidupan Dunia dan Kabar Gembira bagi Orang-Orang yang Bersabar",
+    shortExplanation: "Ayat ini mendidik jiwa mukmin untuk senantiasa tegar dan ridha menghadapi pasang surut ujian hidup, serta mengembalikan segala urusan hanya kepada Allah SWT.",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 2, Surat ke-2, Ayat 155-156 (Tafsir Ibnu Katsir)",
+    verificationStatus: "Terverifikasi",
+    category: "Akhlak",
+    tags: ["sabar", "musibah", "ujian", "istirja", "inna lillahi", "ketabahan", "akhlak"],
+    scholarsReferences: [
+      "Tafsir Ibnu Katsir",
+      "Madarijus Salikin (Ibnu Qayyim Al-Jauziyyah)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Tafsir Ayat Sabar Menghadapi Ujian Hidup dan Faedah Istirja'",
+        url: "https://rumaysho.com"
+      },
+      {
+        websiteName: "Almanhaj.or.id",
+        authorOrScholar: "Syaikh Shalih Al-Fauzan",
+        description: "Tingkatan Kesabaran dan Buah Manis Ketabahan bagi Seorang Mukmin",
+        url: "https://almanhaj.or.id"
+      }
+    ]
+  },
+
+  // 15. Ibadah - Kewajiban Berpuasa Ramadhan
+  {
+    id: 'quran-2-183',
+    type: 'quran',
+    reference: "QS. Al-Baqarah [2]: 183",
+    surahName: "Al-Baqarah",
+    verseNumber: "183",
+    arabicText: "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ كَمَا كُتِبَ عَلَى ٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+    indonesianTranslation: "Wahai orang-orang yang beriman! Diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang sebelum kamu agar kamu bertakwa.",
+    relevance: "Perintah Pokok Kewajiban Puasa Ramadhan Demi Meraih Derajat Ketaqwaan Tertinggi",
+    shortExplanation: "Puasa disyariatkan sebagai sarana penempaan spiritual untuk menahan hawa nafsu syahwat dan perut, mengantarkan seorang hamba menuju derajat insan bertaqwa (la'allakum tattaqun).",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 2, Surat ke-2, Ayat 183 (Tafsir As-Sa'di & Tafsir Ibnu Katsir)",
+    verificationStatus: "Terverifikasi",
+    category: "Ibadah",
+    tags: ["puasa", "ramadhan", "takwa", "wajib puasa", "ibadah", "hukum islam"],
+    scholarsReferences: [
+      "Tafsir Ibnu Katsir",
+      "Lathaiful Ma'arif (Al-Hafizh Ibnu Rajab Al-Hanbali)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "TafsirWeb.com",
+        authorOrScholar: "Kementerian Agama RI & Tafsir As-Sa'di",
+        description: "Tafsir QS. Al-Baqarah Ayat 183 tentang Kewajiban Puasa",
+        url: "https://tafsirweb.com/669-surat-al-baqarah-ayat-183.html"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Panduan Fiqih Puasa Ramadhan Lengkap Sesuai Sunnah",
+        url: "https://rumaysho.com"
+      }
+    ]
   }
 ];
 
