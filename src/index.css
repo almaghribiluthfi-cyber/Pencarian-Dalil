@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-arabic {
+    font-family: 'Amiri', 'Traditional Arabic', serif;
+    font-feature-settings: "cv01", "cv02";
+  }
+}
+
+:root {
+  --color-islamic-primary: #123f36;
+  --color-islamic-secondary: #2a6b5c;
+  --color-islamic-gold: #c49a45;
+  --color-islamic-cream: #e8dcc4;
+  --color-islamic-bg: #f9f7f2;
+}
+
+/* Disguised & subtle scrollbars - non-intrusive */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(196, 154, 69, 0.22);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(42, 107, 92, 0.5);
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(196, 154, 69, 0.22) transparent;
+}
+
+/* Suppress scrollbar on horizontal scroll chips & pills */
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.no-scrollbar,
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prevent horizontal viewport blowout */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}

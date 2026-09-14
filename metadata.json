@@ -1,0 +1,6 @@
+{
+  "name": "Pencarian Dalil Cepat",
+  "description": "Aplikasi pencarian dalil Al-Qur'an dan Hadits berbasis AI dengan verifikasi sumber, teks Arab, terjemahan, dan penjelasan kontekstual.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
