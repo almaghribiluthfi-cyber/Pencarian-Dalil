@@ -758,6 +758,196 @@ export const VERIFIED_DALIL_DATABASE: DalilItem[] = [
         url: "https://rumaysho.com"
       }
     ]
+  },
+
+  // 16. Ibadah - Kewajiban Menunaikan Ibadah Haji (Bagi yang Mampu)
+  {
+    id: 'quran-3-97',
+    type: 'quran',
+    reference: "QS. Ali 'Imran [3]: 97",
+    surahName: "Ali 'Imran",
+    verseNumber: "97",
+    arabicText: "فِيهِ ءَايَـٰتٌۢ بَيِّنَـٰتٌۭ مَّقَامُ إِبْرَٰهِيمَ ۖ وَمَن دَخَلَهُۥ كَانَ ءَامِنًۭا ۗ وَلِلَّهِ عَلَى ٱلنَّاسِ حِجُّ ٱلْبَيْتِ مَنِ ٱسْتَطَاعَ إِلَيْهِ سَبِيلًۭا ۚ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِىٌّ عَنِ ٱلْعَـٰلَمِينَ",
+    indonesianTranslation: "Di sana terdapat tanda-tanda yang jelas, (di antaranya) Maqam Ibrahim. Barangsiapa memasukinya (Baitullah) amanlah dia. Dan (di antara) kewajiban manusia terhadap Allah adalah melaksanakan ibadah haji ke Baitullah, yaitu bagi orang-orang yang mampu mengadakan perjalanan ke sana. Barangsiapa mengingkari (kewajiban haji), maka ketahuilah bahwa Allah Mahakaya (tidak memerlukan sesuatu) dari seluruh alam.",
+    relevance: "Dalil Pokok Kewajiban Ibadah Haji bagi Muslim yang Mampu (Istitha'ah)",
+    shortExplanation: "Ayat ini merupakan nash qath'i kewajiban ibadah haji ke Ka'bah (Baitullah) sekali seumur hidup bagi setiap mukallaf yang memiliki kemampuan fisik, finansial, dan keamanan perjalanan (istitha'ah).",
+    sourceDetails: "Al-Qur'an Al-Karim, Juz 4, Surat ke-3, Ayat 97 (Tafsir Ibnu Katsir & Tafsir As-Sa'di)",
+    verificationStatus: "Terverifikasi",
+    category: "Ibadah",
+    tags: ["haji", "ibadah haji", "umrah", "mampu", "istithaah", "baitullah", "rukun islam", "ka'bah", "makkah"],
+    scholarsReferences: [
+      "Tafsir Al-Qur'an Al-'Azhim (Ibnu Katsir)",
+      "Taisir Al-Karim Ar-Rahman (Syaikh As-Sa'di)",
+      "Al-Majmu' Syarah Al-Muhadzdzab (Imam An-Nawawi)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "TafsirWeb.com",
+        authorOrScholar: "Kementerian Agama RI & Tafsir Ibnu Katsir",
+        description: "Tafsir QS. Ali 'Imran Ayat 97: Kewajiban Haji bagi yang Mampu",
+        url: "https://tafsirweb.com/1229-surat-ali-imran-ayat-97.html"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Fiqih Haji: Syarat Wajib Haji dan Makna Mampu (Istitha'ah)",
+        url: "https://rumaysho.com"
+      },
+      {
+        websiteName: "Almanhaj.or.id",
+        authorOrScholar: "Syaikh Abdul Aziz bin Abdullah bin Baz",
+        description: "Hukum Menunaikan Haji bagi yang Memiliki Kesanggupan",
+        url: "https://almanhaj.or.id"
+      }
+    ]
+  },
+
+  // 17. Ibadah - Haji Merupakan Rukun Islam
+  {
+    id: 'hadith-bukhari-8',
+    type: 'hadith',
+    reference: "HR. Al-Bukhari no. 8 & HR. Muslim no. 16",
+    book: "Shahih Al-Bukhari & Shahih Muslim",
+    hadithNumber: "8 (Bukhari) / 16 (Muslim)",
+    narrator: "Abdullah bin 'Umar radhiyallahu 'anhuma",
+    hadithGrade: "Muttafaq 'Alaih",
+    arabicText: "بُنِيَ الإِسْلاَمُ عَلَى خَمْسٍ: شَهَادَةِ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، وَإِقَامِ الصَّلاَةِ، وَإِيتَاءِ الزَّكَاةِ، وَالحَجِّ، وَصَوْمِ رَمَضَانَ",
+    indonesianTranslation: "Islam dibangun di atas lima perkara: bersaksi bahwa tidak ada sesembahan yang berhak disembah selain Allah dan bahwa Muhammad adalah utusan Allah, mendirikan shalat, menunaikan zakat, menunaikan ibadah haji, dan berpuasa pada bulan Ramadhan.",
+    relevance: "Haji sebagai Rukun Islam yang Kelima",
+    shortExplanation: "Hadits mutafaq 'alaih yang meletakkan ibadah haji sebagai salah satu pilar agung tegaknya keislaman seseorang.",
+    sourceDetails: "Shahih Al-Bukhari, Kitab Al-Iman no. 8; Shahih Muslim, Kitab Al-Iman no. 16",
+    verificationStatus: "Terverifikasi",
+    category: "Ibadah",
+    tags: ["haji", "rukun islam", "ibadah haji", "fondasi islam", "ibadah"],
+    scholarsReferences: [
+      "Fathul Bari Syarah Shahih Al-Bukhari (Ibnu Hajar Al-Asqalani)",
+      "Syarah Shahih Muslim (Imam An-Nawawi)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Sunnah.com",
+        authorOrScholar: "Shahih Al-Bukhari",
+        description: "Book of Belief (Kitab Al-Iman) Hadith 8",
+        url: "https://sunnah.com/bukhari:8"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Penjelasan Hadits Arbain ke-3: Lima Rukun Islam",
+        url: "https://rumaysho.com"
+      }
+    ]
+  },
+
+  // 18. Ibadah - Keutamaan Haji Mabrur (Pahalanya adalah Surga)
+  {
+    id: 'hadith-bukhari-1773',
+    type: 'hadith',
+    reference: "HR. Al-Bukhari no. 1773 & HR. Muslim no. 1349",
+    book: "Shahih Al-Bukhari & Shahih Muslim",
+    hadithNumber: "1773 (Bukhari) / 1349 (Muslim)",
+    narrator: "Abu Hurairah radhiyallahu 'anhu",
+    hadithGrade: "Muttafaq 'Alaih",
+    arabicText: "العُمْرَةُ إِلَى العُمْرَةِ كَفَّارَةٌ لِمَا بَيْنَهُمَا، وَالحَجُّ المَبْرُورُ لَيْسَ لَهُ جَزَاءٌ إِلَّا الجَنَّةُ",
+    indonesianTranslation: "Antara satu umrah ke umrah berikutnya adalah penghapus dosa di antara keduanya, dan haji yang mabrur tidak ada balasan baginya selain surga.",
+    relevance: "Keutamaan Tertinggi Ibadah Haji Mabrur dan Ibadah Umrah",
+    shortExplanation: "Rasulullah shallallahu 'alaihi wa sallam menerangkan bahwa haji yang dilaksanakan dengan ikhlas, sesuai sunnah, dan bersih dari kemaksiatan (haji mabrur) memiliki ganjaran pasti berupa surga dan pengampunan total.",
+    sourceDetails: "Shahih Al-Bukhari, Kitab Al-'Umrah no. 1773; Shahih Muslim, Kitab Al-Hajj no. 1349",
+    verificationStatus: "Terverifikasi",
+    category: "Ibadah",
+    tags: ["haji", "haji mabrur", "umrah", "surga", "keutamaan haji", "pengampunan dosa", "ibadah"],
+    scholarsReferences: [
+      "Fathul Bari (Al-Hafizh Ibnu Hajar)",
+      "Al-Minhaj Syarah Shahih Muslim (Imam An-Nawawi)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Sunnah.com",
+        authorOrScholar: "Shahih Al-Bukhari",
+        description: "Book of Umrah Hadith 1773",
+        url: "https://sunnah.com/bukhari:1773"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Tiga Ciri Haji Mabrur yang Balasannya adalah Surga",
+        url: "https://rumaysho.com"
+      }
+    ]
+  },
+
+  // 19. Ibadah - Haji Menghapus Dosa Seperti Baru Lahir
+  {
+    id: 'hadith-bukhari-1521',
+    type: 'hadith',
+    reference: "HR. Al-Bukhari no. 1521 & HR. Muslim no. 1350",
+    book: "Shahih Al-Bukhari & Shahih Muslim",
+    hadithNumber: "1521 (Bukhari) / 1350 (Muslim)",
+    narrator: "Abu Hurairah radhiyallahu 'anhu",
+    hadithGrade: "Muttafaq 'Alaih",
+    arabicText: "مَنْ حَجَّ لِلَّهِ فَلَمْ يَرْفُثْ، وَلَمْ يَفْسُقْ، رَجَعَ كَيَوْمِ وَلَدَتْهُ أُمُّهُ",
+    indonesianTranslation: "Barangsiapa berhaji semata-mata karena Allah, lalu ia tidak berkata keji (rafats) dan tidak berbuat kefasikan, maka ia kembali (bersih dari dosa) seperti pada hari ia dilahirkan oleh ibunya.",
+    relevance: "Pembersihan Dosa Total bagi Orang yang Berhaji karena Allah",
+    shortExplanation: "Haji yang dijaga dari perbuatan mesum, maksiat, dan pertengkaran membersihkan jiwa pelakunya sehingga suci kembali dari segala noktah dosa.",
+    sourceDetails: "Shahih Al-Bukhari, Kitab Al-Hajj no. 1521; Shahih Muslim no. 1350",
+    verificationStatus: "Terverifikasi",
+    category: "Ibadah",
+    tags: ["haji", "ampunan", "dosa", "ibadah haji", "rafats", "fasik", "mabrur"],
+    scholarsReferences: [
+      "Fathul Bari (Ibnu Hajar Al-Asqalani)",
+      "Riyadhus Shalihin Bab Fadhlil Hajj (Imam An-Nawawi)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Sunnah.com",
+        authorOrScholar: "Shahih Al-Bukhari",
+        description: "Book of Hajj Hadith 1521",
+        url: "https://sunnah.com/bukhari:1521"
+      },
+      {
+        websiteName: "Almanhaj.or.id",
+        authorOrScholar: "Syaikh Muhammad bin Shalih Al-Utsaimin",
+        description: "Kiat Meraih Pahala Haji yang Menghapuskan Dosa",
+        url: "https://almanhaj.or.id"
+      }
+    ]
+  },
+
+  // 20. Ibadah - Perintah Mengambil Tata Cara Manasik dari Sunnah Nabi
+  {
+    id: 'hadith-muslim-1297',
+    type: 'hadith',
+    reference: "HR. Muslim no. 1297",
+    book: "Shahih Muslim",
+    hadithNumber: "1297",
+    narrator: "Jabir bin 'Abdullah radhiyallahu 'anhu",
+    hadithGrade: "Shahih",
+    arabicText: "لِتَأْخُذُوا مَنَاسِكَكُمْ، فَإِنِّي لَا أَدْرِي لَعَلِّي لَا أَحُجُّ بَعْدَ حَجَّتِي هَذِهِ",
+    indonesianTranslation: "Ambillah dariku tata cara manasik (haji dan umrah) kalian, karena sesungguhnya aku tidak tahu boleh jadi aku tidak berhaji lagi setelah hajiku ini.",
+    relevance: "Kewajiban Mengikuti Sunnah Rasulullah dalam Manasik Haji dan Umrah",
+    shortExplanation: "Prinsip dasar manasik haji wajib mencontoh langsung bimbingan Rasulullah shallallahu 'alaihi wa sallam, baik ihram, thawaf, sa'i, wukuf, hingga melempar jumrah.",
+    sourceDetails: "Shahih Muslim, Kitab Al-Hajj, Bab Istihbab Ramayil Jamrah Yauman Nahri",
+    verificationStatus: "Terverifikasi",
+    category: "Ibadah",
+    tags: ["haji", "manasik", "manasik haji", "umrah", "sunnah nabi", "ibadah", "tata cara haji"],
+    scholarsReferences: [
+      "Syarah Shahih Muslim (Imam An-Nawawi)",
+      "Hajjatun Nabi shallallahu 'alaihi wa sallam (Syaikh Al-Albani)"
+    ],
+    sourceAttributions: [
+      {
+        websiteName: "Sunnah.com",
+        authorOrScholar: "Shahih Muslim",
+        description: "The Book of Pilgrimage (Kitab Al-Hajj) Hadith 1297",
+        url: "https://sunnah.com/muslim:1297"
+      },
+      {
+        websiteName: "Rumaysho.com",
+        authorOrScholar: "Ustadz Muhammad Abduh Tuasikal, M.Sc.",
+        description: "Panduan Manasik Haji Lengkap Sesuai Sunnah Nabi",
+        url: "https://rumaysho.com"
+      }
+    ]
   }
 ];
 
@@ -772,6 +962,7 @@ export const CATEGORIES_LIST = [
 ] as const;
 
 export const POPULAR_PROMPTS = [
+  "Dalil tentang kewajiban haji bagi yang mampu",
   "Dalil tentang menghormati orang tua",
   "Keutamaan menuntut ilmu bagi santri",
   "Pentingnya kejujuran dalam berdagang",
